@@ -411,3 +411,183 @@ h2 {
         font-size: 12px;
     }
 }
+/* ======================================================
+   THEME DARK RADAR / JEPPESEN PRO+
+   Palette cockpit IFR : graphite, cyan radar, bleu nuit
+====================================================== */
+
+/* ----------- PALETTE ----------- */
+/*
+Graphite profond : #0c0e11
+Bleu nuit ATC : #11141a
+Bleu Jeppesen : #1e2a38
+Cyan radar : #00e5ff
+Cyan doux : #66f0ff
+Gris cockpit : #2a2f35
+*/
+
+
+/* ======================================================
+   GLOBAL
+====================================================== */
+
+body {
+    background: #0c0e11;
+    color: #d8e0e6;
+}
+
+h2 {
+    color: #a9b7c6;
+    letter-spacing: 0.5px;
+}
+
+.data-block {
+    background: #11141a;
+    border: 1px solid #1e2a38;
+}
+
+
+/* ======================================================
+   SIDEBAR
+====================================================== */
+
+.sidebar {
+    background: rgba(12, 14, 17, 0.92);
+    border-right: 1px solid #1e2a38;
+}
+
+.sidebar-toggle {
+    background: #11141a;
+    border-color: #1e2a38;
+    color: #66f0ff;
+}
+
+.sidebar-toggle:hover {
+    background: #1e2a38;
+}
+
+
+/* ======================================================
+   SONOMETERS LIST
+====================================================== */
+
+.sono-item {
+    background: #11141a;
+    border-color: #1e2a38;
+    color: #d8e0e6;
+}
+
+.sono-item:hover {
+    background: #1a1f26;
+}
+
+.sono-highlight {
+    background: #1e2a38 !important;
+    border-color: #00e5ff !important;
+}
+
+
+/* ======================================================
+   DETAIL PANEL
+====================================================== */
+
+.detail-panel {
+    background: rgba(12, 14, 17, 0.92);
+    border-left: 1px solid #1e2a38;
+}
+
+.detail-panel h2 {
+    color: #00e5ff;
+}
+
+
+/* ======================================================
+   FIDS
+====================================================== */
+
+.fids-row {
+    background: #11141a;
+    border-color: #1e2a38;
+    color: #d8e0e6;
+}
+
+.fids-on-time {
+    border-color: #00e676;
+}
+
+.fids-delayed {
+    border-color: #ffb74d;
+}
+
+.fids-cancelled {
+    border-color: #ef5350;
+}
+
+.fids-boarding {
+    border-color: #42a5f5;
+}
+
+
+/* ======================================================
+   FLOATING BUTTONS
+====================================================== */
+
+.float-btn {
+    background: #11141a;
+    border-color: #1e2a38;
+    color: #66f0ff;
+}
+
+.float-btn:hover {
+    background: #1a1f26;
+}
+
+.float-btn.off {
+    opacity: 0.4;
+}
+
+
+/* ======================================================
+   DEBUG PANEL
+====================================================== */
+
+.debug-panel {
+    background: rgba(12, 14, 17, 0.92);
+    border-color: #1e2a38;
+    color: #66f0ff;
+}
+
+
+/* ======================================================
+   RUNWAY NUMBERS
+====================================================== */
+
+.runway-number {
+    color: #00e5ff;
+    text-shadow: 0 0 6px #00e5ff;
+    font-weight: 700;
+}
+
+
+/* ======================================================
+   MAP OVERLAY (Leaflet)
+====================================================== */
+
+.leaflet-control-zoom a {
+    background: #11141a !important;
+    border: 1px solid #1e2a38 !important;
+    color: #66f0ff !important;
+}
+
+.leaflet-control-zoom a:hover {
+    background: #1e2a38 !important;
+}
+
+
+/* ======================================================
+   HEATMAP (accent radar)
+====================================================== */
+
+.leaflet-heatmap-layer {
+    filter: hue-rotate(180deg) brightness(1.2);
+}
